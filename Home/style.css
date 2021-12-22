@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --border-cards: #1a1921;
+}
+
+body {
+    font-family: 'Merriweather Sans', 'sans-serif';
+
+    padding: 20px;
+
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+h2 {
+    font-size: 1.438rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.813rem;
+    font-weight: 400;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+footer b {
+    font-size: 1rem;
+}
+
+svg {
+    max-width: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--bg-cards);
+    border-radius: 25px;
+
+    margin: 20px;
+    padding: 40px;
+    border-bottom: 6px solid var(--border-cards);
+    border-right: 4px solid var(--border-cards);
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Profile img {
+    height: 200px;
+
+    clip-path: circle(50%); 
+    object-fit: cover;
+
+    margin-bottom: 20px;
+}
+
+.Information ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    list-style-type: none;
+}
+
+.Information li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.Information li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.click svg:hover {
+    cursor: pointer;
+
+    filter: brightness(110%);
+    
+    fill: var(--text-color);
+}
+
+.Technology ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    
+    list-style-type: none;
+
+    margin-top: 20px;
+}
+
+.Technology li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #CB92B1;
+    color: #000;
+    border-radius: 50px;
+
+    height: 40px;
+
+    text-align: center;
+}
+
+.Experience ul {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.Experience h4 {
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.Experience li p:first-of-type {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.Experience li p:last-of-type {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.Education ul {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.Education h4 {
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.Education li p:first-of-type {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.Education li p:last-of-type {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.my-projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-projects a {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.my-projects a:hover {
+    cursor: pointer;
+
+    filter: brightness(120%);
+}
+
+.projects-division {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.projects {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.projects h4 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 20px;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.projects  > p {
+    display: flex;
+    align-items: center;
+    gap: .4rem;    
+    word-wrap: break-word;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    margin-bottom: 100px;
+    margin-right: 10px;
+}
+
+.projects .ratting {
+    display: flex;
+    align-items: left;
+    margin-right: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    position: absolute;
+    bottom: 20px;
+}
+
+.projects .ratting p {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+
+    font-size: 0.875rem;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+
+.projects .ratting .linguagem {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.projects .linguagem p {
+    word-wrap: break-word;
+    color: pink;
+    background-color: blue;
+}
+
+.projects .linguagem .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #837E9F;
+}   
+
+.projects .javaScript-icon {
+    background-color: #E7DE79;
+}
+
+.projects .typeScript-icon {
+    background-color: #798de7;
+}
+
+.projects .nodeJs-icon {
+    background-color: #79e77b;
+}
+
+.Post {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.Post img{
+    clip-path: circle(50%); 
+    display: block;
+
+    margin-right: 40px;
+
+    height: 200px;
+    width: 200px;
+}
+
+.Post .text h4{
+    font-size: 1.125rem;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.Post .text p:first-of-type {
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    margin-bottom: 40px;
+}
+
+.Post .text p:last-of-type {
+    font-size: 1rem;
+    font-weight: 500;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+
+    margin-bottom: 20px;
+}
+
+.Post .text .span {
+    display: flex;
+    gap: .8rem;
+}
+
+.Post .text span {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects  > p {
+        margin-bottom: 140px;
+    }
+
+    .Post {
+        display: flex;
+        align-items: center;
+    }
+
+    .Post img{
+        clip-path: circle(50%); 
+        display: block;
+    
+        margin-right: 0;
+        margin-bottom: 40px;
+    
+        height: 200px;
+        width: 200px;
+    }
+}
