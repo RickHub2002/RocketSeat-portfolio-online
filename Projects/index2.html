@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style2.css">
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <header class="return">
+        <a href="../Home/index.html">Retornar para a página principal</a>
+    </header>
+    <div class="container">
+    <aside>
+        <section class="Profile card">
+            <img id="profileImage"/>
+            <h2>Ricardo Targino</h2>
+            <p>Desenvolvedor front-end</p>
+        </section>
+    </aside>
+
+    <main>
+        <header class="my-projects card">
+            <h3>Meus projetos</h3>
+        </header><!--my-projects-->
+        <section class="projects card">
+            <h4><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>my-onix</h4>
+            <p>
+                Morbi venenatis mollis vulputate. Integer et ex a massa lacinia 
+                sodales quis nec neque. Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit. Aenean nec ex a leo maximus pretium eget eu 
+                dolor. Nunc nec tortor augue. Suspendisse sit amet ultricies 
+                ipsum. Integer a convallis elit. Aenean at pharetra lectus, 
+                auctor malesuada quam. Pellentesque sit amet ipsum magna. 
+                Proin placerat erat sapien, a auctor arcu viverra vel.
+            </p>
+            <div class="ratting">
+                <p onclick=starClick() class="click"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#837E9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>100</p>
+                <p onclick=commitClick() class="click"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-branch"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>100</p>
+                <div class="linguagem">
+                    <p><div class="javaScript-icon circle"></div>JavaScript</p>
+                </div>  
+            </div>
+        </section>
+
+        <section class="projects card">
+            <h4><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>my-onix</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Proin id nulla efficitur, viverra lacus quis, dignissim nulla. 
+                Suspendisse ut sem sagittis, gravida augue at, eleifend ex. 
+                Sed ac leo enim. Nunc vitae enim in felis eleifend lobortis 
+                quis a tellus. Donec sodales, elit sed tincidunt tempor, orci 
+                eros molestie diam, mollis vehicula tortor eros non eros. In 
+                sit amet metus vitae nulla volutpat gravida et in diam. Cras 
+                maximus lacinia eros nec commodo.
+            </p>
+            <div class="ratting">
+                <p onclick=starClick() class="click"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#837E9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>100</p>
+                <p onclick=commitClick() class="click"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-branch"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>100</p>
+                <div class="linguagem">
+                    <p><div class="typeScript-icon circle"></div>TypeScript</p>
+                </div>  
+            </div>
+        </section>
+
+        <section class="projects card">
+            <h4><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>my-onix</h4>
+            <p>
+                Vivamus tincidunt volutpat lorem vel efficitur. Fusce id auctor 
+                est, id faucibus nisl. Phasellus auctor enim semper eros 
+                luctus, eget bibendum turpis vulputate. Suspendisse rhoncus 
+                justo eu nisl egestas semper. Nunc consequat tempus diam, vel 
+                feugiat lacus auctor nec. Aenean porttitor at turpis eget 
+                egestas. Donec at auctor justo, at sollicitudin nunc. Curabitur 
+                fermentum ut tortor laoreet dictum. Vivamus aliquam turpis 
+                vitae gravida suscipit. In sollicitudin mi et eros faucibus, 
+                malesuada cursus libero efficitur. Nulla eu auctor massa. Nunc 
+                ligula eros, fermentum et malesuada ut, vulputate eu leo. Nunc 
+                placerat turpis vitae sodales pretium.
+            </p>
+            <div class="ratting">
+                <p onclick=clickStar() class="click"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#837E9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>100</p>
+                <p class="click"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-branch"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>100</p>
+                <div class="linguagem">
+                    <p><div class="javaScript-icon circle"></div>javaScript</p>
+                    <p><div class="nodeJs-icon circle"></div>NodeJs</p>
+                </div>  
+            </div>
+        </section>
+    </main>
+    </div>
+    <footer>
+        <p>Feito com amor por <b>Ricardo</b></p>
+    </footer>
+
+    <script src="../index.js"></script>
+</body>
+</html>
