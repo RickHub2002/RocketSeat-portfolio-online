@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --border-cards: #1a1921;
+}
+
+body {
+    font-family: 'Merriweather Sans', 'sans-serif';
+
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+h2 {
+    font-size: 1.438rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.813rem;
+    font-weight: 400;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+footer b {
+    font-size: 1rem;
+}
+
+svg {
+    max-width: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--bg-cards);
+    border-radius: 25px;
+
+    margin: 20px;
+    padding: 40px;
+    border-bottom: 6px solid var(--border-cards);
+    border-right: 4px solid var(--border-cards);
+}
+
+.return {
+    background-color: var(--bg-cards);
+    border-bottom: 5px solid var(--border-cards);
+
+    width: 100%;
+
+    margin-bottom: 10%;
+    padding: 20px;
+}
+
+.return a {
+    display: block;
+
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.return a:hover {
+    text-decoration: underline;
+
+    cursor: pointer;
+
+    filter: brightness(120%);
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 25%;
+    margin-bottom: 50px;
+}
+
+.Profile img {
+    height: 200px;
+
+    clip-path: circle(50%); 
+    object-fit: cover;
+
+    margin-bottom: 20px;
+}
+
+.click svg:hover {
+    cursor: pointer;
+
+    filter: brightness(110%);
+    
+    fill: var(--text-color);
+}
+
+.my-projects {
+    text-align: center;
+}
+
+.my-projects a {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.my-projects a:hover {
+    cursor: pointer;
+
+    filter: brightness(120%);
+}
+
+.projects {
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.projects h4 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 20px;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.projects  > p {
+    display: flex;
+    align-items: center;
+    gap: .4rem;    
+    word-wrap: break-word;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    margin-bottom: 100px;
+    margin-right: 10px;
+}
+
+.projects .ratting {
+    display: flex;
+    align-items: left;
+    margin-right: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    position: absolute;
+    bottom: 20px;
+}
+
+.projects .ratting p {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+
+    font-size: 0.875rem;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+
+.projects .ratting .linguagem {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.projects .linguagem p {
+    word-wrap: break-word;
+    color: pink;
+    background-color: blue;
+}
+
+.projects .linguagem .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #837E9F;
+}   
+
+.projects .javaScript-icon {
+    background-color: #E7DE79;
+}
+
+.projects .typeScript-icon {
+    background-color: #798de7;
+}
+
+.projects .nodeJs-icon {
+    background-color: #79e77b;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects  > p {
+        margin-bottom: 140px;
+    }
+}
